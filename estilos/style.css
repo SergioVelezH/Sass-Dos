@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+header:h1 {
+  margin: 40%;
+  color: black;
+}
+header nav {
+  height: 100%;
+}
+header nav ul {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+header nav ul li {
+  list-style: none;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*-------------------main--------------------*/
+main {
+  height: 100%;
+  width: 100%;
+}
+main section {
+  height: 100%;
+  width: 100%;
+}
+
+.bicho {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 2rem;
+  grid-template-areas: "h2bicho" "imgbicho" "parrafocr";
+  justify-items: center;
+}
+.bicho:h2 {
+  grid-area: h2bicho;
+}
+.bicho .fotocr {
+  grid-area: imgbicho;
+}
+.bicho .fotocr img {
+  width: 100%;
+}
+.bicho .contenidocr {
+  grid-area: parrafocr;
+}
+
+.inicioscr {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 2rem;
+  grid-template-areas: "h2inicio" "fotocr" "informacion";
+  justify-items: center;
+}
+.inicioscr:h2 {
+  grid-area: h2inicio;
+}
+.inicioscr .infocr {
+  grid-area: informacion;
+}
+.inicioscr .seccionfoto {
+  grid-area: fotocr;
+}
+
+footer {
+  background-color: brown;
+  color: black;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    height: 10vh;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  header:h1 {
+    margin: 0 0 40% 0;
+    color: black;
+  }
+  header .title {
+    margin: 0;
+  }
+  header nav {
+    height: 100%;
+    width: 70%;
+  }
+  header nav ul {
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header nav ul li {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bicho {
+    margin: 1rem 0 3rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem auto;
+    gap: 2rem;
+    grid-template-areas: "h2bicho h2bicho" "imgbicho parrafocr";
+    justify-items: center;
+  }
+  .inicioscr {
+    margin: 1rem 0 3rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem auto;
+    gap: 2rem;
+    grid-template-areas: "h2inicio h2inicio" "informacion fotocr";
+    justify-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */

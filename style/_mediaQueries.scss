@@ -1,0 +1,75 @@
+
+@media screen and (min-width: 600px){
+    header{
+        @include tamaño(100%,10vh);
+        background-color: brown;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        &:h1{
+            margin: 0 0 40% 0;
+            color: $color-letra;
+    }
+        .title{
+            margin: 0;
+        }   
+        nav{
+            @include tamaño(70%,100%);
+                ul{
+                    height: 70%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                     li{
+                        font-size: 1rem;
+                        }
+                }
+            }
+}
+
+    
+
+
+
+
+
+
+
+
+
+}
+
+
+@media screen and (min-width: 1024px){
+    .bicho{
+        margin: 1rem 0 3rem 0;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5rem auto;
+        gap: 2rem;
+        grid-template-areas: 
+            "h2bicho h2bicho"
+            "imgbicho parrafocr"
+        ;
+        justify-items: center;
+}
+
+    .inicioscr{
+    margin: 1rem 0 3rem 0;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem auto;
+    gap: 2rem;
+    grid-template-areas:
+        "h2inicio h2inicio"
+        "informacion fotocr"
+    ;
+    justify-items: center;
+}
+
+
+}
